@@ -4,7 +4,7 @@ import pl.training.shop.entities.Payment;
 
 import java.util.Optional;
 
-public interface PaymentRepository {
+public interface PaymentsRepository {
 
     Payment save(Payment payment);
 
