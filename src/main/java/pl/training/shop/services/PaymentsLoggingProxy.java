@@ -1,8 +1,11 @@
 
-package pl.training.shop.payments;
+package pl.training.shop.services;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.java.Log;
+import pl.training.shop.entities.Payment;
+import pl.training.shop.entities.PaymentRequest;
+import pl.training.shop.services.Payments;
 
 @Log
 @RequiredArgsConstructor

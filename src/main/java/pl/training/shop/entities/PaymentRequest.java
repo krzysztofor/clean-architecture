@@ -1,7 +1,8 @@
-package pl.training.shop.payments;
+package pl.training.shop.entities;
 
 import lombok.Getter;
 import org.javamoney.moneta.FastMoney;
+import pl.training.shop.entities.InvalidPaymentRequest;
 
 import java.util.Map;
 

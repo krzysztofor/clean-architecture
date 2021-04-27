@@ -1,7 +1,10 @@
-package pl.training.shop.payments;
+package pl.training.shop.services;
 
 import lombok.RequiredArgsConstructor;
-import pl.training.shop.commons.TimeProvider;
+import pl.training.shop.entities.Payment;
+import pl.training.shop.entities.PaymentRequest;
+import pl.training.shop.entities.PaymentStatus;
+import pl.training.shop.repositories.PaymentRepository;
 
 @RequiredArgsConstructor
 public class PaymentService implements Payments {
@@ -13,6 +16,7 @@ public class PaymentService implements Payments {
     @Override
     public Payment process(PaymentRequest paymentRequest) {
         var payment = createPayment(paymentRequest);
+        // Integration with external payments gateway
         return paymentRepository.save(payment);
     }
 

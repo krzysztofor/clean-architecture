@@ -2,8 +2,12 @@ package pl.training.shop;
 
 import lombok.extern.java.Log;
 import pl.training.shop.commons.LocalMoney;
-import pl.training.shop.commons.SystemTimeProvider;
-import pl.training.shop.payments.*;
+import pl.training.shop.services.SystemTimeProvider;
+import pl.training.shop.entities.PaymentRequest;
+import pl.training.shop.repositories.InMemoryPaymentRepository;
+import pl.training.shop.services.PaymentService;
+import pl.training.shop.services.PaymentsLoggingProxy;
+import pl.training.shop.services.UUIDPaymentIdGenerator;
 
 import static java.util.Collections.emptyMap;
 

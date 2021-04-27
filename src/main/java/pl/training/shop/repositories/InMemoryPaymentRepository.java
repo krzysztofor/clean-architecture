@@ -1,4 +1,6 @@
-package pl.training.shop.payments;
+package pl.training.shop.repositories;
+
+import pl.training.shop.entities.Payment;
 
 import java.util.HashSet;
 import java.util.Optional;
